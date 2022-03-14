@@ -105,8 +105,8 @@ a {
   align-items: center;
 }
 
-#tab-Proyectos h1 {
-  padding-bottom: 1em;
+#tab-Proyectos{
+  padding-top:70px;
 }
 
 #tab-Sobremi {

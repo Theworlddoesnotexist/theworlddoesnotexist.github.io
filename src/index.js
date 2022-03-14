@@ -69,7 +69,7 @@ for (let i = 0; i < secctions.length; i++) {
     <h3>Something about ${secctions[i]}</h3>`;
   }
   if (i == 2) {
-    secction.innerHTML = `<h1>${secctions[i]}</h1>`;
+    secction.innerHTML = ``;
   }
   if (i == 1) {
     secction.innerHTML = `<h1>${secctions[i]}</h1>
@@ -113,8 +113,8 @@ for (let i = 0; i < proyects.length; i++) {
 
   let content = document.createElement("div");
   content.className = "content";
-  let contentInner = `<p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">X</p>`;
-  content.innerHTML = contentInner;
+  //let contentInner = `<p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">X</p>`;
+  //content.innerHTML = contentInner;
   iframe.appendChild(content);
   iframeContainer.appendChild(iframe);
   iframeContainer.appendChild(content);
