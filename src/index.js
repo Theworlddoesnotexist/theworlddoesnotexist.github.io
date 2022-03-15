@@ -54,7 +54,7 @@ const domParser = async (proyect) => {
   const jsSecction = doc3.createElement("script");
   jsSecction.innerHTML = jsString;
   doc3.body.append(jsSecction);
-  console.log(doc3.documentElement.innerHTML);
+  //console.log(doc3.documentElement.innerHTML);
   //app.srcdoc = doc3.documentElement.innerHTML;
   let app = document.getElementById(`${proyect}`);
   app.srcdoc = doc3.documentElement.innerHTML;
@@ -168,3 +168,76 @@ var swiper = new Swiper(".swiper-container", {
       }
 
 });
+
+const contacme = document.createElement("div");
+contacme.className = "contacme";
+const innerContacme = `<div class="contacme-title">
+<p>get in  touch</p>
+<h2>Contactame</h2>
+</div>
+<div class=contactWrapper>
+  <div class=left id=left></div>
+  <div class=right id=right></div>
+</div>
+`
+contacme.innerHTML = innerContacme;
+
+document.getElementById(`tab-${secctions[3]}`).appendChild(contacme);
+
+const personalData = ['+56952051131','dani.oqueron@gmail.com','Santiago, Chile'];
+
+for(let i = 0; i<personalData.length;i++){
+  const divData = document.createElement("div");
+  divData.className = "data-list";
+  divData.className = "PersonalData";
+  divData.id = "PersonalData";
+  let icon = document.createElement("div");
+  icon.className = "icon";
+  svg = 'M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z';
+  if(i == 0){
+    svg = "M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z";
+  }
+  if(i == 1){
+    svg = 'M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z';
+  }
+  if(i == 2){
+    svg = "M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z";
+  }
+  iconInner = `<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="${svg}"></path></svg>`
+  icon.innerHTML = iconInner;
+  let info = document.createElement("div");
+  info.className = "info";
+  infoInner = `<p>${personalData[i]}</p>`
+  info.innerHTML = infoInner;
+  divData.appendChild(icon);
+  divData.appendChild(info);
+
+  document.getElementById(`left`).appendChild(divData);
+}
+
+const form = ['name','email','message','submit'];
+
+const formContainer = document.createElement("form");
+formContainer.className = "formContainer";
+formContainer.setAttribute('action','https://formsubmit.co/dani.oqueron@gmail.com');
+formContainer.setAttribute('method','POST');
+
+for(let i = 0; i<form.length; i++){
+  const divForm = document.createElement("div");
+  divForm.className = "form-list";
+
+  var formInner = `<label for="${form[i]}">Your ${form[i]}<textarea type="text" id="${form[i]}" name="${form[i]}" required></textarea></label>`
+  if(i == 1){
+    var formInner = `<label for="${form[i]}">Your ${form[i]}<textarea type="${form[i]}" id="${form[i]}" name="${form[i]}" required></textarea></label>`
+  }
+  if(form[i] == 'submit'){
+    var formInner = `<label for="${form[i]}"><button type="${form[i]}">${form[i]}</button></label>`;
+  }
+  divForm.innerHTML = formInner;
+  formContainer.appendChild(divForm);
+}
+
+document.getElementById(`right`).appendChild(formContainer);
+
+
+
