@@ -183,6 +183,10 @@ a {
   display:none;
 }
 
+#tab-Sobremi p{
+  max-width:400px;
+}
+
 
 @media (min-width: 800px) {
   .nav-list {
@@ -209,6 +213,7 @@ a {
     grid-column: 1/2;
     align-self: start;
     margin-right: 3rem;
+
   }
   #tab-Sobremi h2 {
     align-self: end;
