@@ -64,6 +64,23 @@ a {
   transition: opacity 0.3s;
 }
 
+.iconGit{
+  background-color: #eee;
+  top: 90%;
+  left: 90%;
+  position: absolute;
+  cursor:pointer;
+  border-radius:50%;
+  width:3rem;
+  height:3rem;
+}
+.iconGit svg{
+  align-self:center;
+  width: 2rem;
+  height:2rem;
+  margin: 0.5rem auto 0px 0.5rem;
+}
+
 .secction-slide {
   display: flex;
   flex-direction: column;
