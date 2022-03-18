@@ -67,7 +67,7 @@ a {
 .iconGit{
   background-color: #eee;
   top: 90%;
-  left: 90%;
+  left: 80%;
   position: absolute;
   cursor:pointer;
   border-radius:50%;
@@ -187,10 +187,18 @@ a {
   .swiper-container {
     min-height: 70vh;
   }
+  .swiper-wrapper{
+    overflow: hidden;
+  }
+
 }
 
 .nav a:hover {
   opacity: 1;
   --border: solid 0.25rem #000;
   border-bottom: var(--border);
+}
+.iconGit:hover{
+  background-color: #000;;
+  fill:#fff;
 }
