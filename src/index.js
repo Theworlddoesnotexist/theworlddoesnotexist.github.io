@@ -66,7 +66,7 @@ for (let i = 0; i < secctions.length; i++) {
   let secction = document.createElement("secction");
   if (i == 0) {
     secction.innerHTML = `<h1>${secctions[i]}</h1>
-    <h3>Something about ${secctions[i]}</h3>`;
+    <h3>TheWorldDoesNotExist</h3>`;
   }
   if (i == 2) {
     secction.innerHTML = ``;
@@ -75,7 +75,7 @@ for (let i = 0; i < secctions.length; i++) {
     secction.innerHTML = `<h1>${secctions[i]}</h1>
                           <p>Soy Marcos Escobar.</br>
 			  Gracias por visitar mi portafolio.</br>
-			  Yo soy un diseñador junior de 20 años sin experiencia laboral, abierto a trabajar y aprender constantemente nuevas tecnologías, enfocando en diseño web y programación backend. </p>
+			  Soy un programador junior de 20 años sin experiencia laboral, abierto a trabajar y aprender constantemente nuevas tecnologías, enfocando en diseño web y programación backend. </p>
                           <h2>Conocimientos</h2>
                           <ul>Fronted:
                           <li>Html-Css</li>
