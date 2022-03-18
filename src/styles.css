@@ -134,6 +134,132 @@ a {
   text-align: center;
 }
 
+
+#tab-Portafolio h1{
+  animation: typewriter 8s steps(10,end) infinite,
+  blinkTextCursor 500ms steps(40) infinite normal;
+}
+
+#tab-Portafolio h1{
+  width: 8em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(155,155,155);
+  border-color: red;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;transform: translateY(-50%);
+}
+#tab-Portafolio h3{
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fadeInUp 2s ease calc(1s) forwards;
+}
+
+@keyframes typewriter{
+  from{
+    width: 0;
+  }
+  20%{
+    width: 8em;
+  }
+  45%{
+    width:8em;
+  }
+  80%{
+    width:0;
+  }
+  to{
+    width: 0;
+  }
+}
+@keyframes blinkTextCursor {
+  from, to {
+    border-right-color: transparent;
+  }
+  50% {
+    border-right-color: #000;
+  }
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 0.6;
+    transform: translateY(0);
+  }
+}
+
+=======
+>>>>>>> parent of 759a342 (add writer animation)
+.contacme{
+  max-width: 1200px;
+  width: 90%;
+  margin: 70px auto 0;
+}
+
+.contacme-title{
+  text-align:center;
+}
+.contacme-title p{
+  font-size:1.2rem;
+}
+.contacme-title h2{
+  font-size:2rem;
+}
+.left{
+  width:100%;
+  max-width:310px;
+  margin: 0 auto;
+}
+.contactWrapper{
+  display: flex;
+  gap: 5rem;
+  margin-top: 1rem;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  position: relative;
+  align-items:center;
+}
+.PersonalData{
+  padding: 1rem;
+  background-color: #66666666;
+  display: flex;
+  -moz-box-align: center;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 3px;
+  margin-bottom: 2rem;
+}
+.PersonalData .icon{
+  color: #000;
+  background-color: #eee;
+  padding: 1rem;
+  display: flex;
+  -moz-box-align: center;
+  align-items: center;
+  -moz-box-pack: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.PersonalData svg{
+  width:1.5rem;
+  height:1.5rem;
+}
+
+.PersonalData .info{
+  max-width: 500px;
+  font-size: 1rem;
+  line-height: 1em;
+}
+
+.right{
+  display:none;
+}
+
+#tab-Sobremi p{
+  max-width:400px;
+}
+
+
 @media (min-width: 800px) {
   .nav-list {
     font-size: 1rem;
@@ -159,6 +285,7 @@ a {
     grid-column: 1/2;
     align-self: start;
     margin-right: 3rem;
+
   }
   #tab-Sobremi h2 {
     align-self: end;
