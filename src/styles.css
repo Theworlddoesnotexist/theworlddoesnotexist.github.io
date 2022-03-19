@@ -6,6 +6,24 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+:root{
+  --fs-h3: 1rem;
+  --fs-h1: 2rem;
+  --mfs-h1:3rem;
+  --mlt:1rem;
+  --lt-h1: 0.5rem;
+  --lt-h3:0.3rem;
+  --fs-h2: 2.25rem;
+  --fs-body: 1rem;
+  --fs-xl: 4.5rem;
+  --clr-bg: #eee;
+  --clr-f: #000;
+  --clr-w: #fff;
+  --clr-accent: #D06D6D;
+  --clr-accent-dark: #613131;
+}
+
 body {
   font-family: "Century Gothic", "Lato", sans-serif;
 }
@@ -92,7 +110,7 @@ a {
   padding: 0 2em;
 }
 .secction-slide h1 {
-  font-size: 2rem;
+  font-size: var(--fs-h1);
   margin: 0;
   letter-spacing: 0.5rem;
 }
@@ -197,10 +215,13 @@ a {
   text-align:center;
 }
 .contacme-title p{
-  font-size:1.2rem;
+  font-size: 1rem;
+  letter-spacing: 0.3rem;
+  opacity: 0.6;
 }
 .contacme-title h2{
-  font-size:2rem;
+  font-size:var(--fs-h1);
+  letter-spacing:0.5rem;
 }
 .left{
   width:100%;
@@ -263,8 +284,8 @@ a {
     font-size: 1rem;
   }
   .secction-slide h1 {
-    font-size: 3rem;
-    letter-spacing: 1rem;
+    font-size: var(--mfs-h1);
+    letter-spacing: var(--mlt);
   }
   .secction-slide h3 {
     font-size: 1rem;
@@ -314,6 +335,10 @@ a {
   }
   .swiper-wrapper{
     overflow: hidden;
+  }
+  .contacme-title h2{
+    font-size:var(--mfs-h1);
+    letter-spacing:var(--mlt);
   }
 
 }
