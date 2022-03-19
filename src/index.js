@@ -179,8 +179,8 @@ var swiper = new Swiper(".swiper-container", {
 const contacme = document.createElement("div");
 contacme.className = "contacme";
 const innerContacme = `<div class="contacme-title">
-<p>get in  touch</p>
-<h2>Contactame</h2>
+<p>ponte en</p>
+<h2>Contacto</h2>
 </div>
 <div class=contactWrapper>
   <div class=left id=left></div>
