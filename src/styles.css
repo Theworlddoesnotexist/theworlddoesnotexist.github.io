@@ -276,6 +276,10 @@ a {
 
 #tab-Sobremi p{
   max-width:400px;
+  padding-bottom:1rem;
+}
+#tab-Sobremi h1,h2{
+  padding-bottom:1rem;
 }
 
 
@@ -304,6 +308,7 @@ a {
     grid-column: 1/2;
     align-self: start;
     margin-right: 3rem;
+    max-width:400px;
 
   }
   #tab-Sobremi h2 {

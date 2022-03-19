@@ -73,7 +73,7 @@ for (let i = 0; i < secctions.length; i++) {
   }
   if (i == 1) {
     secction.innerHTML = `<h1>${secctions[i]}</h1>
-                          <p>Soy Marcos Escobar.</br>
+                          <p>Me llamo Marcos Escobar.</br>
 			  Gracias por visitar mi portafolio.</br>
 			  Soy un programador junior de 20 años sin experiencia laboral, abierto a trabajar y aprender constantemente nuevas tecnologías, enfocando en diseño web y programación backend. </p>
                           <h2>Conocimientos</h2>
@@ -191,7 +191,7 @@ contacme.innerHTML = innerContacme;
 
 document.getElementById(`tab-${secctions[3]}`).appendChild(contacme);
 
-const personalData = ['+56952051131','dani.oqueron@gmail.com','Santiago, Chile'];
+const personalData = ['+56952051131','MarcosAlexis.Esc@gmail.com','Santiago, Chile'];
 
 for(let i = 0; i<personalData.length;i++){
   const divData = document.createElement("div");
