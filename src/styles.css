@@ -338,9 +338,7 @@ a {
   .swiper-container {
     min-height: 70vh;
   }
-  .swiper-wrapper{
-    overflow: hidden;
-  }
+
   .contacme-title h2{
     font-size:var(--mfs-h1);
     letter-spacing:var(--mlt);
