@@ -103,7 +103,7 @@ wrapperSwiper.className = "swiper-container";
 
 const proyectDiv = document.createElement("div");
 proyectDiv.className = "swiper-wrapper";
-const proyects = ["weatherApp", "newsWebsite", "SortingAlgorithm"];
+const proyects = ["weatherApp", "newsWebsite", "SortingAlgorithm","PokedexApp"];
 
 for (let i = 0; i < proyects.length; i++) {
   let iframeContainer = document.createElement("div");
