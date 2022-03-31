@@ -74,7 +74,6 @@ for (let i = 0; i < secctions.length; i++) {
   if (i == 1) {
     secction.innerHTML = `<h1>${secctions[i]}</h1>
                           <p>Me llamo Marcos Escobar.</br>
-			  Gracias por visitar mi portafolio.</br>
 			  Soy un programador junior de 20 años sin experiencia laboral, abierto a trabajar y aprender constantemente nuevas tecnologías, enfocando en diseño web y programación backend. </p>
                           <h2>Conocimientos</h2>
                           <ul>Fronted:
@@ -86,7 +85,6 @@ for (let i = 0; i < secctions.length; i++) {
                           <li>RestApi</li>
                           Utilidades
                           <li>Github</li>
-                          <li>Fundamentos de Programación</li>
                           </ul>`;
   }
   //secction.innerHTML = innerSection;
