@@ -91,6 +91,7 @@ a {
   border-radius:50%;
   width:3rem;
   height:3rem;
+  fill: #656565;
 }
 .iconGit svg{
   align-self:center;
@@ -352,6 +353,5 @@ a {
   border-bottom: var(--border);
 }
 .iconGit:hover{
-  background-color: #000;;
-  fill:#fff;
+  fill:#000;
 }
